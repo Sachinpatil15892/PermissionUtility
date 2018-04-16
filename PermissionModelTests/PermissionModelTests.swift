@@ -2,8 +2,8 @@
 //  PermissionModelTests.swift
 //  PermissionModelTests
 //
-//  Created by ISS on 1/4/18.
-//  Copyright © 2018 ISS. All rights reserved.
+//  Created by Sachin on 1/4/18.
+//  Copyright © 2018 Sachin. All rights reserved.
 //
 
 import XCTest

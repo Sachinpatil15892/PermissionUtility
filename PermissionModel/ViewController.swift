@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  PermissionModel
 //
-//  Created by ISS on 1/4/18.
-//  Copyright © 2018 ISS. All rights reserved.
+//  Created by Sachin on 1/4/18.
+//  Copyright © 2018 Sachin. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
 
 

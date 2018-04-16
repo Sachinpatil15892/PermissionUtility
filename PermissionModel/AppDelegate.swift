@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PermissionModel
 //
-//  Created by ISS on 1/4/18.
-//  Copyright © 2018 ISS. All rights reserved.
+//  Created by Sachin on 1/4/18.
+//  Copyright © 2018 Sachin. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ApplicationRequiredPermission.sharedInstance.askSequenceOfPermission()
         return true
     }
 
@@ -39,6 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
     }
 
 

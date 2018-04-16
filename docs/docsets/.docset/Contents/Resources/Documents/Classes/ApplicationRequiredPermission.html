@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApplicationRequiredPermission Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ApplicationRequiredPermission" class="dashAnchor"></a>
+    <a title="ApplicationRequiredPermission Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (53% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ApplicationRequiredPermission Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationPermissionModel.html">ApplicationPermissionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationRequiredPermission.html">ApplicationRequiredPermission</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseViewController.html">BaseViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultUtility.html">UserDefaultUtility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AppUsedConstantValues.html">AppUsedConstantValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppUsedConstantValues/ApplicationNavigationSetupConstants.html">– ApplicationNavigationSetupConstants</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ApplicationRequiredPermission</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ApplicationRequiredPermission</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class responsible to managing all permission regarding using device resources and frameworks</p>
+
+<p>Class is response for Asking following permission.</p>
+
+<ol>
+<li>Photo Permission</li>
+<li>Camera Permission</li>
+<li>Microphone Permission</li>
+<li>Push Notification Permission.</li>
+</ol>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    <p>Knowledge of all frameworks for asking resource permission.</p>
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PermissionModel29ApplicationRequiredPermission14sharedInstanceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PermissionModel29ApplicationRequiredPermission14sharedInstanceS0_">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This variable is all about crating singleton object for ApplicationRequiredPermission class.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span> <span class="o">=</span> <span class="nf">ApplicationRequiredPermission</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission30checkThatAppHasPhotoPermissionFS0_FT_OSC21PHAuthorizationStatus"></a>
+                    <a name="//apple_ref/swift/Method/checkThatAppHasPhotoPermission()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission30checkThatAppHasPhotoPermissionFS0_FT_OSC21PHAuthorizationStatus">checkThatAppHasPhotoPermission()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method check that application&rsquo;s  Photolibrary permission status.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkThatAppHasPhotoPermission</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">PHAuthorizationStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>PHAuthorizationStatus</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission39checkThatAppHasCameraPermissionForVideoFS0_FT_OSC21AVAuthorizationStatus"></a>
+                    <a name="//apple_ref/swift/Method/checkThatAppHasCameraPermissionForVideo()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission39checkThatAppHasCameraPermissionForVideoFS0_FT_OSC21AVAuthorizationStatus">checkThatAppHasCameraPermissionForVideo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method check that application&rsquo;s  camera permission status.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkThatAppHasCameraPermissionForVideo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AVAuthorizationStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AVAuthorizationStatus</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission42checkThatAppHasMicrophoneAccessPermisssionFS0_FT_VSC30AVAudioSessionRecordPermission"></a>
+                    <a name="//apple_ref/swift/Method/checkThatAppHasMicrophoneAccessPermisssion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission42checkThatAppHasMicrophoneAccessPermisssionFS0_FT_VSC30AVAudioSessionRecordPermission">checkThatAppHasMicrophoneAccessPermisssion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method check that application&rsquo;s  microphone access permission status.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkThatAppHasMicrophoneAccessPermisssion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AVAudioSessionRecordPermission</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AVAudioSessionRecordPermission</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission18askPhotoPermissionFS0_FFSbT_T_"></a>
+                    <a name="//apple_ref/swift/Method/askPhotoPermission(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission18askPhotoPermissionFS0_FFSbT_T_">askPhotoPermission(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method ask Photo-library access permission.</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    <p>PhotoFramework Knowledge.</p>
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">askPhotoPermission</span><span class="p">(</span><span class="n">_</span> <span class="nv">doneWork</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">PermissionCompletionHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>PermissionCompletionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion handler which calls when requesting to access is complete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission19askCameraPermissionFS0_FFSbT_T_"></a>
+                    <a name="//apple_ref/swift/Method/askCameraPermission(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission19askCameraPermissionFS0_FFSbT_T_">askCameraPermission(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method ask Camera access permission.</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    <p>AVCaptureDevice Knowledge.</p>
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">askCameraPermission</span><span class="p">(</span><span class="n">_</span> <span class="nv">doneWork</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">PermissionCompletionHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>PermissionCompletionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion handler which calls when requesting to access is complete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission23askMicrophonePermissionFS0_FFSbT_T_"></a>
+                    <a name="//apple_ref/swift/Method/askMicrophonePermission(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission23askMicrophonePermissionFS0_FFSbT_T_">askMicrophonePermission(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method ask Microphone access permission.</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    <p>AVAudioSession Fremework Knowledge.</p>
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Sachin Patil</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">askMicrophonePermission</span> <span class="p">(</span><span class="n">_</span> <span class="nv">doneWork</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">PermissionCompletionHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>PermissionCompletionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion handler which calls when requesting to access is complete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PermissionModel29ApplicationRequiredPermission23askSequenceOfPermissionFS0_FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/askSequenceOfPermission()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PermissionModel29ApplicationRequiredPermission23askSequenceOfPermissionFS0_FT_T_">askSequenceOfPermission()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method asks sequece of permission that application requires</p>
+<h1 id='important-notes' class='heading'>Important Notes</h1>
+
+<p>Sequence of permission as given below.</p>
+
+<ol>
+<li>Photo Permission.</li>
+<li>Camera Permission.</li>
+<li>Microphone Permission.</li>
+<li>Push Notification Permission.</li>
+</ol>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Sachin Patil
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">askSequenceOfPermission</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8435F3702017117700710682 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435F36F2017117700710682 /* BaseViewController.swift */; };
+		8435F372201714DD00710682 /* ApplicationContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435F371201714DD00710682 /* ApplicationContants.swift */; };
+		8435F3742017486F00710682 /* UserDefaultUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435F3732017486F00710682 /* UserDefaultUtility.swift */; };
 		84A550501FFE3796000DCE81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5504F1FFE3796000DCE81 /* AppDelegate.swift */; };
 		84A550521FFE3796000DCE81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A550511FFE3796000DCE81 /* ViewController.swift */; };
 		84A550551FFE3796000DCE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A550531FFE3796000DCE81 /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		84A5505A1FFE3796000DCE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A550581FFE3796000DCE81 /* LaunchScreen.storyboard */; };
 		84A550651FFE3796000DCE81 /* PermissionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A550641FFE3796000DCE81 /* PermissionModelTests.swift */; };
 		84A550701FFE3796000DCE81 /* PermissionModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5506F1FFE3796000DCE81 /* PermissionModelUITests.swift */; };
+		84A5507E1FFE37D1000DCE81 /* ApplicationPermissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5507D1FFE37D1000DCE81 /* ApplicationPermissionModel.swift */; };
+		84F3C542201058F3008A042E /* ApplicationRequiredPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3C541201058F3008A042E /* ApplicationRequiredPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8435F36F2017117700710682 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8435F371201714DD00710682 /* ApplicationContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContants.swift; sourceTree = "<group>"; };
+		8435F3732017486F00710682 /* UserDefaultUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtility.swift; sourceTree = "<group>"; };
 		84A5504C1FFE3796000DCE81 /* PermissionModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermissionModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A5504F1FFE3796000DCE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A550511FFE3796000DCE81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		84A5506B1FFE3796000DCE81 /* PermissionModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermissionModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A5506F1FFE3796000DCE81 /* PermissionModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionModelUITests.swift; sourceTree = "<group>"; };
 		84A550711FFE3796000DCE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A5507D1FFE37D1000DCE81 /* ApplicationPermissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPermissionModel.swift; sourceTree = "<group>"; };
+		84F3C541201058F3008A042E /* ApplicationRequiredPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRequiredPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				84A550561FFE3796000DCE81 /* Assets.xcassets */,
 				84A550581FFE3796000DCE81 /* LaunchScreen.storyboard */,
 				84A5505B1FFE3796000DCE81 /* Info.plist */,
+				84A5507D1FFE37D1000DCE81 /* ApplicationPermissionModel.swift */,
+				84F3C541201058F3008A042E /* ApplicationRequiredPermission.swift */,
+				8435F36F2017117700710682 /* BaseViewController.swift */,
+				8435F371201714DD00710682 /* ApplicationContants.swift */,
+				8435F3732017486F00710682 /* UserDefaultUtility.swift */,
 			);
 			path = PermissionModel;
 			sourceTree = "<group>";
@@ -259,7 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8435F3702017117700710682 /* BaseViewController.swift in Sources */,
+				84F3C542201058F3008A042E /* ApplicationRequiredPermission.swift in Sources */,
 				84A550521FFE3796000DCE81 /* ViewController.swift in Sources */,
+				84A5507E1FFE37D1000DCE81 /* ApplicationPermissionModel.swift in Sources */,
+				8435F372201714DD00710682 /* ApplicationContants.swift in Sources */,
+				8435F3742017486F00710682 /* UserDefaultUtility.swift in Sources */,
 				84A550501FFE3796000DCE81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,9 +364,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -366,6 +387,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,9 +423,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -416,6 +439,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -426,11 +450,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PermissionModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ISS.PermissionModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +470,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PermissionModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ISS.PermissionModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
